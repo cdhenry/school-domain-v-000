@@ -1,31 +1,30 @@
 require 'pry'
 class School
 
-  ROSTER = {}
-
   def initialize(name)
     @name = name
+    @roster = {}
   end
 
   def roster
-    ROSTER
+    @roster
   end
 
   def add_student(student, grade)
-    if ROSTER.include?(grade)
-      ROSTER[grade] << student
+    if @roster.include?(grade)
+      @roster[grade] << student
     else
-      ROSTER[grade] = []
-      ROSTER[grade] << student
+      @roster[grade] = []
+      @roster[grade] << student
     end
   end
 
   def grade(grade)
-    ROSTER[grade]
+    @roster[grade]
   end
 
   def sort
-    ROSTER[grade].each {|student| student.sort}
+    @roster[grade].each {|student| student.sort}
   end
 
 end
