@@ -17,8 +17,8 @@ class School
     else
       ROSTER[grade] = []
       ROSTER[grade] << student
+      ROSTER.sort.to_h
     end
-    ROSTER.sort.to_h
   end
 
   def grade(grade)
