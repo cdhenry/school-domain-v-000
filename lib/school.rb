@@ -14,7 +14,8 @@ class School
     if ROSTER.has_key?(grade_level)
       ROSTER[:grade_level] << student
     else
-      ROSTER => {grade_level => [student]}
+      ROSTER[:grade_level] = []
+      ROSTER[:grade_level] << student
     end
   end
 
