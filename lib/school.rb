@@ -10,14 +10,18 @@ class School
     ROSTER
   end
 
-  def add_student(student, grade_level)
-    if ROSTER.has_key?("#{grade_level}")
-      ROSTER[:"#{grade_level}"] << student
+  def add_student(student, grade)
+    if ROSTER.has_key?(grade)
+      ROSTER[grade] << student
     else
-      ROSTER[:"#{grade_level}"] = []
-      ROSTER[:"#{grade_level}"] << student
+      ROSTER[grade] = []
+      ROSTER[grade] << student
     end
   end
 
+  def grade
+    
+
+  end
 
 end
