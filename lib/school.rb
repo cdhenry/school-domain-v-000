@@ -28,7 +28,6 @@ class School
       @roster[grade] = student.sort
     end
     @roster
-
   end
 
 end
