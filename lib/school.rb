@@ -17,7 +17,7 @@ class School
       ROSTER[grade] = []
       ROSTER[grade] << student
     end
-    ROSTER[grade][student].flatten
+    ROSTER[grade].flatten
   end
 
   def grade(grade)
