@@ -12,7 +12,6 @@ class School
   end
 
   def add_student(student, grade)
-    binding.pry
     if ROSTER.include?(grade)
       ROSTER[grade] << student
     else
