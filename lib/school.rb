@@ -18,6 +18,7 @@ class School
       ROSTER[grade] = []
       ROSTER[grade] << student
     end
+    ROSTER.sort.to_h
   end
 
   def grade(grade)
